@@ -53,9 +53,9 @@ export default class PhotoUpload extends React.Component {
     ImagePicker.showImagePicker(this.options, async response => {
       this.setState({buttonDisabled: false})
       console.log('Response = ', response)
-      let rotation = 0 
+      let rotation = 0
       const {originalRotation} = response
-      
+
 
       if (this.props.onResponse) this.props.onResponse(response)
 
@@ -74,16 +74,16 @@ export default class PhotoUpload extends React.Component {
       }
 
       let { height, width, quality, format } = this.state
-      
+
       //Determining rotation param
-      if ( originalRotation === 90) { 
-        rotation = 90 
-      } else if (originalRotation === 180) { 
-        //For a few images rotation is 180. 
-        rotation = -180 
+      if ( originalRotation === 90) {
+        rotation = 90
+      } else if (originalRotation === 180) {
+        //For a few images rotation is 180.
+        rotation = -180
       } else if ( originalRotation === 270 )  {
         //When taking images with the front camera (selfie), the rotation is 270.
-        rotation = -90 
+        rotation = -90
       }
       // resize image
       const resizedImageUri = await ImageResizer.createResizedImage(
@@ -109,7 +109,7 @@ export default class PhotoUpload extends React.Component {
       })
 
       // handle photo in props functions as data string
-      if (this.props.onPhotoSelect) this.props.onPhotoSelect(photoData)
+      if (this.props.onPhotoSelect) this.props.onPhotoSelect({photoData, filePath})
     })
   }
 
