@@ -97,7 +97,8 @@ check the docs of each library on how to link manually.
   <PhotoUpload
     onPhotoSelect={avatar => {
       if (avatar) {
-        console.log('Image base64 string: ', avatar)
+        console.log('Image path: ', avatar.filePath)
+        console.log('Image base64 string: ', avatar.photoData)
       }
     }}
   >
@@ -126,7 +127,7 @@ check the docs of each library on how to link manually.
  width | Number | the resized image width, default is 300
  format | String | The format desired of the resized image, 'JPEG' or 'PNG' default is 'JPEG'
  quality | Number | The quality of the resized image indicated by a number between 1 and 100, default is 80
- onPhotoSelect | Function | function which takes the base64 string of the new image as parameter
+ onPhotoSelect | Function | function which takes the base64 string of the new image and the filePath as parameters
  onError | Function | fires if any error occur with response
  onTapCustomButton | Function | fires on tap custom button
  onStart | Function | fires when user starts (useful for loading, etc)
@@ -134,4 +135,3 @@ check the docs of each library on how to link manually.
  onResponse | Function | fires on response exists
  onRender | Function | fires after render
  onResizedImageUri | Function | fires when image resized is ready
-
