@@ -1,14 +1,36 @@
 {
-  "name": "react-native-photo-upload",
-  "version": "1.2.1",
-  "description": "Cross platform photo upload component for react native",
-  "main": "index.js",
-  "repository": {
+  "_args": [
+    [
+      "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+      "/Users/mbennekrouf/code/bau-solutions/concreet-app"
+    ]
+  ],
+  "_from": "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+  "_id": "react-native-photo-upload@git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git#a0c0439c90951f2d606b9c7716370d025c663688",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/react-native-photo-upload",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "git+https://github.com/malsapp/react-native-photo-upload.git"
+    "raw": "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+    "rawSpec": "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+    "saveSpec": "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+    "fetchSpec": "ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+    "gitCommittish": null
   },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git#a0c0439c90951f2d606b9c7716370d025c663688",
+  "_spec": "git+ssh://git@stash.b-i.com:7999/rp/react-native-photo-upload.git",
+  "_where": "/Users/mbennekrouf/code/bau-solutions/concreet-app",
+  "author": {
+    "name": "Omar Khaled",
+    "email": "omarkhaled320@hotmail.com"
+  },
+  "bugs": {
+    "url": "https://github.com/malsapp/react-native-photo-upload/issues"
   },
   "dependencies": {
     "prop-types": "^15.5.10",
@@ -16,13 +38,11 @@
     "react-native-image-picker": "^0.26.7",
     "react-native-image-resizer": "^1.0.0"
   },
+  "description": "Cross platform photo upload component for react native",
   "devDependencies": {
     "standard": "^10.0.2"
   },
-  "peerDependencies": {
-    "react": ">15.0",
-    "react-native": ">0.27"
-  },
+  "homepage": "https://github.com/malsapp/react-native-photo-upload#readme",
   "keywords": [
     "photo",
     "react",
@@ -34,7 +54,19 @@
     "ios",
     "android"
   ],
-  "author": "Omar Khaled <omarkhaled320@hotmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "main": "index.js",
+  "name": "react-native-photo-upload",
+  "peerDependencies": {
+    "react": ">15.0",
+    "react-native": ">0.27"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/malsapp/react-native-photo-upload.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "version": "1.2.1"
 }
-
